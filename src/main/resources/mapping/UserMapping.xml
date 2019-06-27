@@ -2,15 +2,15 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="com.entity.User">
-        <result column="id" jdbcType="INTEGER" property="id" />
-        <result column="userName" jdbcType="VARCHAR" property="userName" />
-        <result column="passWord" jdbcType="VARCHAR" property="passWord" />
-        <result column="realName" jdbcType="VARCHAR" property="realName" />
-    </resultMap>
+<!--    <resultMap id="BaseResultMap" type="username">-->
+<!--&lt;!&ndash;        <result column="id" jdbcType="INTEGER" property="id" />&ndash;&gt;-->
+<!--        <result column="userName" jdbcType="VARCHAR" property="userName" />-->
+<!--&lt;!&ndash;        <result column="passWord" jdbcType="VARCHAR" property="passWord" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <result column="realName" jdbcType="VARCHAR" property="realName" />&ndash;&gt;-->
+<!--    </resultMap>-->
 
-    <select id="Sel" resultType="com.entity.User">
-        select * from user where id = #{id}
+    <select id="Sel" resultType="string">
+        select userName from user where id = #{id}
     </select>
 
 </mapper>

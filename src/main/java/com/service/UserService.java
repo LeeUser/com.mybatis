@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
     @Autowired
     UserMapper userMapper;
-    public User Sel(int id){
+    public String Sel(int id){
         return userMapper.Sel(id);
     }
 }
